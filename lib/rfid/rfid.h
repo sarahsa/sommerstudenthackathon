@@ -1,0 +1,2 @@
+void rfidSetup();
+bool rfidActivated();

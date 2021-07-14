@@ -3,7 +3,7 @@
 int TRIGGER = 14;
 int ECHO = 16;
 
-void setupDistanceMeter(){
+void distanceMeterSetup(){
     pinMode(TRIGGER, OUTPUT);
     pinMode(ECHO, INPUT);
 }
