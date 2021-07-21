@@ -1,2 +1,2 @@
-void setupDistanceMeter();
+void distanceMeterSetup();
 bool distanceMeterActivated(int distance);

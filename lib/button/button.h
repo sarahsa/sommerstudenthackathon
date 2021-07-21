@@ -1,1 +1,1 @@
-bool buttonPressed();
+bool isButtonPressed();

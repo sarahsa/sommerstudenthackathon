@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-bool buttonPressed(){
+bool isButtonPressed(){
     int BUTTON = 4;
     bool buttonPressed = digitalRead(BUTTON);
     return !buttonPressed;

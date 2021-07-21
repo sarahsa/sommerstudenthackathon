@@ -1,2 +1,2 @@
 void rfidSetup();
-bool rfidActivated();
+bool isRfidActivated();

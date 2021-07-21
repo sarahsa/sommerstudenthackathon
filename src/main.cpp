@@ -9,20 +9,15 @@ int RELAY = 2;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  setupDistanceMeter();
+  distanceMeterSetup();
   pinMode(BUTTON, INPUT_PULLUP);
-  pinMode(RXLED, OUTPUT);
-  pinMode(RELAY, OUTPUT);
   Serial.begin(9600);
   rfidSetup();
 }
  
 // the loop function runs over and over again forever
 void loop() {
-
- bool dispence = buttonPressed() || rfidActivated();
-  Serial.print("Dispence: ");
-  Serial.println(dispence);
+  bool dispence = isButtonPressed() || isRfidActivated();
   digitalWrite(RXLED, !dispence);
   digitalWrite(RELAY, dispence);
 }
