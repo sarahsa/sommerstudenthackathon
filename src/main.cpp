@@ -2,6 +2,7 @@
 #include <../lib/button/button.h>
 #include <../lib/distancemeter/distancemeter.h>
 #include <../lib/rfid/rfid.h>
+#include <../lib/ledstrip/ledstrip.h>
 
 int BUTTON = 4;
 int RXLED = 17;
@@ -20,4 +21,5 @@ void loop() {
   bool dispence = isButtonPressed() || isRfidActivated();
   digitalWrite(RXLED, !dispence);
   digitalWrite(RELAY, dispence);
+  blink();
 }
